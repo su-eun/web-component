@@ -1,0 +1,13 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "pnpm -F shop-app run dev",
+    "build": "pnpm -F ui-components run build && pnpm -F shop-app run build",
+    "test": "pnpm -F shop-app run test && pnpm -F ui-components run test"
+  },
+  "dependencies": {
+    "pnpm": "^10.16.1"
+  }
+}
